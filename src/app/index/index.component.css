@@ -1,3 +1,13 @@
+@import '../../../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-angular-schedule/styles/material.css';
+
 #header{
     overflow: hidden;
     max-height: 30vh;
@@ -70,9 +80,15 @@
 }
 
 #tile-side > div {
+    transition: 250ms;
     height: 30%;
     width: 90%;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+#tile-side > div:hover{
+    transition: 250ms;
+    transform:translate(10px, -10px)
 }
 
