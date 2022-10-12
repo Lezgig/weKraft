@@ -1,0 +1,30 @@
+<div id="main-container">
+    <div id="bg">
+        <img id="img-2" src="assets/images/weKraft_logo.png">
+    </div>
+    <div id="tile-container-container">
+        <div id="tile-container" *ngFor="let item of loopArray; index as i; ">
+            <div id="tile-tool">
+                <img src="assets/images/tools/{{item}}">
+            </div> 
+        </div>
+    </div>
+    <div id="main-tiles-container">
+        <div id="agenda-side">
+            <div id="agenda-preview-tile">
+
+            </div>
+        </div>
+        <div id="tile-side">
+            <div id="agenda-tile">
+
+            </div>
+            <div id="formation-tile">
+
+            </div>
+            <div id="green-tile">
+
+            </div>
+        </div>
+    </div>
+</div>

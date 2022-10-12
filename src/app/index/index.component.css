@@ -1,0 +1,78 @@
+#header{
+    overflow: hidden;
+    max-height: 30vh;
+}
+
+#img-1{
+    position: absolute;
+    width: 100%;
+}
+
+#img-2{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+#tile-container-container{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    height: 35vh;
+    justify-content: space-around;
+}
+
+#tile-container{
+
+    background-color: transparent;
+    display: flex;
+    height: 8em;
+    width: 8em;
+    border-radius: 10px;
+    align-self: flex-end;
+    transition: 1s;
+
+}
+
+#tile-container:hover{
+    transition: 250ms;
+    transform:translate(10px, -10px)
+}
+
+#tile-tool > img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#main-tiles-container{
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+#main-tiles-container > div{
+    height: 100%;
+    width: 50%;
+}
+
+#agenda-side{
+    display: flex;
+}
+
+#tile-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tile-side > div {
+    height: 30%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
