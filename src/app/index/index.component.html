@@ -1,3 +1,4 @@
+
 <div id="main-container">
     <div id="tile-container-container" *ngIf="[show]">
         <div id="tile-container" *ngFor="let item of loopArrayLogo; index as i; ">
@@ -11,7 +12,9 @@
     <div id="main-tiles-container">
         <div id="agenda-side">
             <div id="agenda-preview-tile">
-                <img src="assets/images/calendar.png">
+
+                <app-agenda></app-agenda>
+                <!-- <img src="assets/images/calendar.png"> -->
             </div>
         </div>
         <div id="tile-side">
