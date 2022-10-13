@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
 #header{
     overflow: hidden;
     max-height: 30vh;
@@ -39,7 +44,7 @@
     transform:translate(10px, -10px)
 }
 
-#tile-tool > img {
+#tile-tool > a > img {
     border-radius: 10px;
     object-fit: cover;
     height: 100%;
@@ -76,3 +81,46 @@
     border-radius: 10px;
 }
 
+#tile-side > div{
+    position: relative;
+}
+
+#tile-side > div {
+    transition: 250ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tile-side > div:hover {
+    transition: 250ms;
+    transform:translate(10px, -10px)
+}
+
+
+#tile-side > div >h1 {
+    padding: 2%;
+    font-family: "Roboto";
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#tile-side > div > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#agenda-preview-tile{
+    display: flex;
+}
+
+#agenda-preview-tile > img {
+    width: 100%;
+    object-fit: cover;
+    padding: 1%;
+}
