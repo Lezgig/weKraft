@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: '/cover.html',
-  styleUrls: ['/cover.css']
+  templateUrl: '/app.component.html',
+  styleUrls: ['/app.component.css']
 })
 export class AppComponent {
   title = 'weKraft';
+
+  constructor(private router: Router){
+    this.router.navigate(['/polu'])
+  }
 }
