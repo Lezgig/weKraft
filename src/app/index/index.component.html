@@ -1,0 +1,35 @@
+<div id="main-container">
+    <div id="bg">
+        <img id="img-2" src="assets/images/weKraft_logo.png">
+    </div>
+    <div id="tile-container-container" *ngIf="[show]">
+        <div id="tile-container" *ngFor="let item of loopArrayLogo; index as i; ">
+            <div id="tile-tool">
+                <a href="{{getLink(i)}}">
+                    <img src="assets/images/tools/{{getLogo(i)}}">
+                </a>
+            </div> 
+        </div>
+    </div>
+    <div id="main-tiles-container">
+        <div id="agenda-side">
+            <div id="agenda-preview-tile">
+                <img src="assets/images/calendar.png">
+            </div>
+        </div>
+        <div id="tile-side">
+            <div id="agenda-tile">
+                <img src="assets/images/agenda.png">
+                <h1>AGENDA</h1>
+            </div>
+            <div id="formation-tile">
+                <img src="assets/images/formation.png">
+                <h1>FORMATION</h1>
+            </div>
+            <div id="green-tile">
+                <img src="assets/images/carbone.png">
+                <h1>Co2</h1>
+            </div>
+        </div>
+    </div>
+</div>
